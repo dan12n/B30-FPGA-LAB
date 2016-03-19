@@ -1,0 +1,1078 @@
+|registeredmultiplier
+sum[0] <= inst1[0].DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= inst1[1].DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= inst1[2].DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= inst1[3].DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= inst1[4].DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= inst1[5].DB_MAX_OUTPUT_PORT_TYPE
+sum[6] <= inst1[6].DB_MAX_OUTPUT_PORT_TYPE
+sum[7] <= inst1[7].DB_MAX_OUTPUT_PORT_TYPE
+sum[8] <= inst1[8].DB_MAX_OUTPUT_PORT_TYPE
+sum[9] <= inst1[9].DB_MAX_OUTPUT_PORT_TYPE
+clock => altclkctrl0:inst2.inclk
+A_in[0] => inst12[0].DATAIN
+A_in[1] => inst12[1].DATAIN
+A_in[2] => inst12[2].DATAIN
+A_in[3] => inst12[3].DATAIN
+A_in[4] => inst12[4].DATAIN
+B_in[0] => inst18[0].DATAIN
+B_in[1] => inst18[1].DATAIN
+B_in[2] => inst18[2].DATAIN
+B_in[3] => inst18[3].DATAIN
+B_in[4] => inst18[4].DATAIN
+
+
+|registeredmultiplier|altclkctrl0:inst2
+inclk => altclkctrl0_altclkctrl_uhi:altclkctrl0_altclkctrl_uhi_component.inclk[0]
+outclk <= altclkctrl0_altclkctrl_uhi:altclkctrl0_altclkctrl_uhi_component.outclk
+
+
+|registeredmultiplier|altclkctrl0:inst2|altclkctrl0_altclkctrl_uhi:altclkctrl0_altclkctrl_uhi_component
+clkselect[0] => clkctrl1.CLKSELECT
+clkselect[1] => clkctrl1.CLKSELECT1
+ena => clkctrl1.ENA
+inclk[0] => clkctrl1.INCLK
+inclk[1] => clkctrl1.INCLK1
+inclk[2] => clkctrl1.INCLK2
+inclk[3] => clkctrl1.INCLK3
+outclk <= clkctrl1.CLK
+
+
+|registeredmultiplier|pipelinedmultiplier:inst
+multiplied[0] <= lastsum:inst2.s_out[0]
+multiplied[1] <= lastsum:inst2.s_out[1]
+multiplied[2] <= lastsum:inst2.s_out[2]
+multiplied[3] <= lastsum:inst2.s_out[3]
+multiplied[4] <= lastsum:inst2.s_out[4]
+multiplied[5] <= lastsum:inst2.s_out[5]
+multiplied[6] <= lastsum:inst2.s_out[6]
+multiplied[7] <= lastsum:inst2.s_out[7]
+multiplied[8] <= lastsum:inst2.s_out[8]
+multiplied[9] <= lastsum:inst2.s_out[9]
+clock => inst8[4].CLK
+clock => inst8[3].CLK
+clock => inst8[2].CLK
+clock => inst8[1].CLK
+clock => inst8[0].CLK
+clock => inst6[4].CLK
+clock => inst6[3].CLK
+clock => inst6[2].CLK
+clock => inst6[1].CLK
+clock => inst6[0].CLK
+clock => inst4[4].CLK
+clock => inst4[3].CLK
+clock => inst4[2].CLK
+clock => inst4[1].CLK
+clock => inst4[0].CLK
+clock => inst1[4].CLK
+clock => inst1[3].CLK
+clock => inst1[2].CLK
+clock => inst1[1].CLK
+clock => inst1[0].CLK
+clock => inst3[9].CLK
+clock => inst3[8].CLK
+clock => inst3[7].CLK
+clock => inst3[6].CLK
+clock => inst3[5].CLK
+clock => inst3[4].CLK
+clock => inst3[3].CLK
+clock => inst3[2].CLK
+clock => inst3[1].CLK
+clock => inst3[0].CLK
+clock => inst5[9].CLK
+clock => inst5[8].CLK
+clock => inst5[7].CLK
+clock => inst5[6].CLK
+clock => inst5[5].CLK
+clock => inst5[4].CLK
+clock => inst5[3].CLK
+clock => inst5[2].CLK
+clock => inst5[1].CLK
+clock => inst5[0].CLK
+clock => inst7[9].CLK
+clock => inst7[8].CLK
+clock => inst7[7].CLK
+clock => inst7[6].CLK
+clock => inst7[5].CLK
+clock => inst7[4].CLK
+clock => inst7[3].CLK
+clock => inst7[2].CLK
+clock => inst7[1].CLK
+clock => inst7[0].CLK
+clock => inst9[9].CLK
+clock => inst9[8].CLK
+clock => inst9[7].CLK
+clock => inst9[6].CLK
+clock => inst9[5].CLK
+clock => inst9[4].CLK
+clock => inst9[3].CLK
+clock => inst9[2].CLK
+clock => inst9[1].CLK
+clock => inst9[0].CLK
+A_firstin[0] => sum:inst.A[0]
+A_firstin[1] => sum:inst.A[1]
+A_firstin[2] => sum:inst.A[2]
+A_firstin[3] => sum:inst.A[3]
+A_firstin[4] => sum:inst.A[4]
+B_firstin[0] => sum:inst.B_in[0]
+B_firstin[0] => sum:inst14.B_in[0]
+B_firstin[0] => sum:inst15.B_in[0]
+B_firstin[0] => sum:inst16.B_in[0]
+B_firstin[0] => lastsum:inst2.B_in[0]
+B_firstin[1] => sum:inst.B_in[1]
+B_firstin[1] => sum:inst14.B_in[1]
+B_firstin[1] => sum:inst15.B_in[1]
+B_firstin[1] => sum:inst16.B_in[1]
+B_firstin[1] => lastsum:inst2.B_in[1]
+B_firstin[2] => sum:inst.B_in[2]
+B_firstin[2] => sum:inst14.B_in[2]
+B_firstin[2] => sum:inst15.B_in[2]
+B_firstin[2] => sum:inst16.B_in[2]
+B_firstin[2] => lastsum:inst2.B_in[2]
+B_firstin[3] => sum:inst.B_in[3]
+B_firstin[3] => sum:inst14.B_in[3]
+B_firstin[3] => sum:inst15.B_in[3]
+B_firstin[3] => sum:inst16.B_in[3]
+B_firstin[3] => lastsum:inst2.B_in[3]
+B_firstin[4] => sum:inst.B_in[4]
+B_firstin[4] => sum:inst14.B_in[4]
+B_firstin[4] => sum:inst15.B_in[4]
+B_firstin[4] => sum:inst16.B_in[4]
+B_firstin[4] => lastsum:inst2.B_in[4]
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2
+A_out[0] <= <GND>
+A_out[1] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+A_out[2] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+A_out[3] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+A_out[4] <= inst11[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst11[0].DATAIN
+A[1] => inst11[1].DATAIN
+A[2] => inst11[2].DATAIN
+A[3] => inst11[3].DATAIN
+A[4] => inst2[4].IN0
+A[4] => inst2[3].IN0
+A[4] => inst2[2].IN0
+A[4] => inst2[1].IN0
+A[4] => inst2[0].IN0
+s_out[0] <= tenbitfulladder:inst.s[0]
+s_out[1] <= tenbitfulladder:inst.s[1]
+s_out[2] <= tenbitfulladder:inst.s[2]
+s_out[3] <= tenbitfulladder:inst.s[3]
+s_out[4] <= tenbitfulladder:inst.s[4]
+s_out[5] <= tenbitfulladder:inst.s[5]
+s_out[6] <= tenbitfulladder:inst.s[6]
+s_out[7] <= tenbitfulladder:inst.s[7]
+s_out[8] <= tenbitfulladder:inst.s[8]
+s_out[9] <= tenbitfulladder:inst.s[9]
+s_in[0] => tenbitfulladder:inst.A[0]
+s_in[1] => tenbitfulladder:inst.A[1]
+s_in[2] => tenbitfulladder:inst.A[2]
+s_in[3] => tenbitfulladder:inst.A[3]
+s_in[4] => tenbitfulladder:inst.A[4]
+s_in[5] => tenbitfulladder:inst.A[5]
+s_in[6] => tenbitfulladder:inst.A[6]
+s_in[7] => tenbitfulladder:inst.A[7]
+s_in[8] => tenbitfulladder:inst.A[8]
+s_in[9] => tenbitfulladder:inst.A[9]
+B_in[0] => inst2[0].IN1
+B_in[1] => inst2[1].IN1
+B_in[2] => inst2[2].IN1
+B_in[3] => inst2[3].IN1
+B_in[4] => inst2[4].IN1
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst
+CarryOut <= fulladder:inst10.carryout
+InputCarry => fulladder:inst.carryin
+A[0] => fulladder:inst.inputA
+A[1] => fulladder:inst2.inputA
+A[2] => fulladder:inst3.inputA
+A[3] => fulladder:inst4.inputA
+A[4] => fulladder:inst5.inputA
+A[5] => fulladder:inst6.inputA
+A[6] => fulladder:inst7.inputA
+A[7] => fulladder:inst8.inputA
+A[8] => fulladder:inst9.inputA
+A[9] => fulladder:inst10.inputA
+B[0] => fulladder:inst.inputB
+B[1] => fulladder:inst2.inputB
+B[2] => fulladder:inst3.inputB
+B[3] => fulladder:inst4.inputB
+B[4] => fulladder:inst5.inputB
+B[5] => fulladder:inst6.inputB
+B[6] => fulladder:inst7.inputB
+B[7] => fulladder:inst8.inputB
+B[8] => fulladder:inst9.inputB
+B[9] => fulladder:inst10.inputB
+s[0] <= fulladder:inst.sum
+s[1] <= fulladder:inst2.sum
+s[2] <= fulladder:inst3.sum
+s[3] <= fulladder:inst4.sum
+s[4] <= fulladder:inst5.sum
+s[5] <= fulladder:inst6.sum
+s[6] <= fulladder:inst7.sum
+s[7] <= fulladder:inst8.sum
+s[8] <= fulladder:inst9.sum
+s[9] <= fulladder:inst10.sum
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst10
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst9
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst8
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst7
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst6
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst5
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst4
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst3
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst2
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|lastsum:inst2|tenbitfulladder:inst|fulladder:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16
+A_out[0] <= <GND>
+A_out[1] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+A_out[2] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+A_out[3] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+A_out[4] <= inst11[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst11[0].DATAIN
+A[1] => inst11[1].DATAIN
+A[2] => inst11[2].DATAIN
+A[3] => inst11[3].DATAIN
+A[4] => inst2[4].IN0
+A[4] => inst2[3].IN0
+A[4] => inst2[2].IN0
+A[4] => inst2[1].IN0
+A[4] => inst2[0].IN0
+s_out[0] <= <GND>
+s_out[1] <= inst12[0].DB_MAX_OUTPUT_PORT_TYPE
+s_out[2] <= inst12[1].DB_MAX_OUTPUT_PORT_TYPE
+s_out[3] <= inst12[2].DB_MAX_OUTPUT_PORT_TYPE
+s_out[4] <= inst12[3].DB_MAX_OUTPUT_PORT_TYPE
+s_out[5] <= inst12[4].DB_MAX_OUTPUT_PORT_TYPE
+s_out[6] <= inst12[5].DB_MAX_OUTPUT_PORT_TYPE
+s_out[7] <= inst12[6].DB_MAX_OUTPUT_PORT_TYPE
+s_out[8] <= inst12[7].DB_MAX_OUTPUT_PORT_TYPE
+s_out[9] <= inst12[8].DB_MAX_OUTPUT_PORT_TYPE
+s_in[0] => tenbitfulladder:inst.A[0]
+s_in[1] => tenbitfulladder:inst.A[1]
+s_in[2] => tenbitfulladder:inst.A[2]
+s_in[3] => tenbitfulladder:inst.A[3]
+s_in[4] => tenbitfulladder:inst.A[4]
+s_in[5] => tenbitfulladder:inst.A[5]
+s_in[6] => tenbitfulladder:inst.A[6]
+s_in[7] => tenbitfulladder:inst.A[7]
+s_in[8] => tenbitfulladder:inst.A[8]
+s_in[9] => tenbitfulladder:inst.A[9]
+B_in[0] => inst2[0].IN1
+B_in[1] => inst2[1].IN1
+B_in[2] => inst2[2].IN1
+B_in[3] => inst2[3].IN1
+B_in[4] => inst2[4].IN1
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst
+CarryOut <= fulladder:inst10.carryout
+InputCarry => fulladder:inst.carryin
+A[0] => fulladder:inst.inputA
+A[1] => fulladder:inst2.inputA
+A[2] => fulladder:inst3.inputA
+A[3] => fulladder:inst4.inputA
+A[4] => fulladder:inst5.inputA
+A[5] => fulladder:inst6.inputA
+A[6] => fulladder:inst7.inputA
+A[7] => fulladder:inst8.inputA
+A[8] => fulladder:inst9.inputA
+A[9] => fulladder:inst10.inputA
+B[0] => fulladder:inst.inputB
+B[1] => fulladder:inst2.inputB
+B[2] => fulladder:inst3.inputB
+B[3] => fulladder:inst4.inputB
+B[4] => fulladder:inst5.inputB
+B[5] => fulladder:inst6.inputB
+B[6] => fulladder:inst7.inputB
+B[7] => fulladder:inst8.inputB
+B[8] => fulladder:inst9.inputB
+B[9] => fulladder:inst10.inputB
+s[0] <= fulladder:inst.sum
+s[1] <= fulladder:inst2.sum
+s[2] <= fulladder:inst3.sum
+s[3] <= fulladder:inst4.sum
+s[4] <= fulladder:inst5.sum
+s[5] <= fulladder:inst6.sum
+s[6] <= fulladder:inst7.sum
+s[7] <= fulladder:inst8.sum
+s[8] <= fulladder:inst9.sum
+s[9] <= fulladder:inst10.sum
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst10
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst9
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst8
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst7
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst6
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst5
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst4
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst3
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst2
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst16|tenbitfulladder:inst|fulladder:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15
+A_out[0] <= <GND>
+A_out[1] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+A_out[2] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+A_out[3] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+A_out[4] <= inst11[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst11[0].DATAIN
+A[1] => inst11[1].DATAIN
+A[2] => inst11[2].DATAIN
+A[3] => inst11[3].DATAIN
+A[4] => inst2[4].IN0
+A[4] => inst2[3].IN0
+A[4] => inst2[2].IN0
+A[4] => inst2[1].IN0
+A[4] => inst2[0].IN0
+s_out[0] <= <GND>
+s_out[1] <= inst12[0].DB_MAX_OUTPUT_PORT_TYPE
+s_out[2] <= inst12[1].DB_MAX_OUTPUT_PORT_TYPE
+s_out[3] <= inst12[2].DB_MAX_OUTPUT_PORT_TYPE
+s_out[4] <= inst12[3].DB_MAX_OUTPUT_PORT_TYPE
+s_out[5] <= inst12[4].DB_MAX_OUTPUT_PORT_TYPE
+s_out[6] <= inst12[5].DB_MAX_OUTPUT_PORT_TYPE
+s_out[7] <= inst12[6].DB_MAX_OUTPUT_PORT_TYPE
+s_out[8] <= inst12[7].DB_MAX_OUTPUT_PORT_TYPE
+s_out[9] <= inst12[8].DB_MAX_OUTPUT_PORT_TYPE
+s_in[0] => tenbitfulladder:inst.A[0]
+s_in[1] => tenbitfulladder:inst.A[1]
+s_in[2] => tenbitfulladder:inst.A[2]
+s_in[3] => tenbitfulladder:inst.A[3]
+s_in[4] => tenbitfulladder:inst.A[4]
+s_in[5] => tenbitfulladder:inst.A[5]
+s_in[6] => tenbitfulladder:inst.A[6]
+s_in[7] => tenbitfulladder:inst.A[7]
+s_in[8] => tenbitfulladder:inst.A[8]
+s_in[9] => tenbitfulladder:inst.A[9]
+B_in[0] => inst2[0].IN1
+B_in[1] => inst2[1].IN1
+B_in[2] => inst2[2].IN1
+B_in[3] => inst2[3].IN1
+B_in[4] => inst2[4].IN1
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst
+CarryOut <= fulladder:inst10.carryout
+InputCarry => fulladder:inst.carryin
+A[0] => fulladder:inst.inputA
+A[1] => fulladder:inst2.inputA
+A[2] => fulladder:inst3.inputA
+A[3] => fulladder:inst4.inputA
+A[4] => fulladder:inst5.inputA
+A[5] => fulladder:inst6.inputA
+A[6] => fulladder:inst7.inputA
+A[7] => fulladder:inst8.inputA
+A[8] => fulladder:inst9.inputA
+A[9] => fulladder:inst10.inputA
+B[0] => fulladder:inst.inputB
+B[1] => fulladder:inst2.inputB
+B[2] => fulladder:inst3.inputB
+B[3] => fulladder:inst4.inputB
+B[4] => fulladder:inst5.inputB
+B[5] => fulladder:inst6.inputB
+B[6] => fulladder:inst7.inputB
+B[7] => fulladder:inst8.inputB
+B[8] => fulladder:inst9.inputB
+B[9] => fulladder:inst10.inputB
+s[0] <= fulladder:inst.sum
+s[1] <= fulladder:inst2.sum
+s[2] <= fulladder:inst3.sum
+s[3] <= fulladder:inst4.sum
+s[4] <= fulladder:inst5.sum
+s[5] <= fulladder:inst6.sum
+s[6] <= fulladder:inst7.sum
+s[7] <= fulladder:inst8.sum
+s[8] <= fulladder:inst9.sum
+s[9] <= fulladder:inst10.sum
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst10
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst9
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst8
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst7
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst6
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst5
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst4
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst3
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst2
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst15|tenbitfulladder:inst|fulladder:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14
+A_out[0] <= <GND>
+A_out[1] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+A_out[2] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+A_out[3] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+A_out[4] <= inst11[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst11[0].DATAIN
+A[1] => inst11[1].DATAIN
+A[2] => inst11[2].DATAIN
+A[3] => inst11[3].DATAIN
+A[4] => inst2[4].IN0
+A[4] => inst2[3].IN0
+A[4] => inst2[2].IN0
+A[4] => inst2[1].IN0
+A[4] => inst2[0].IN0
+s_out[0] <= <GND>
+s_out[1] <= inst12[0].DB_MAX_OUTPUT_PORT_TYPE
+s_out[2] <= inst12[1].DB_MAX_OUTPUT_PORT_TYPE
+s_out[3] <= inst12[2].DB_MAX_OUTPUT_PORT_TYPE
+s_out[4] <= inst12[3].DB_MAX_OUTPUT_PORT_TYPE
+s_out[5] <= inst12[4].DB_MAX_OUTPUT_PORT_TYPE
+s_out[6] <= inst12[5].DB_MAX_OUTPUT_PORT_TYPE
+s_out[7] <= inst12[6].DB_MAX_OUTPUT_PORT_TYPE
+s_out[8] <= inst12[7].DB_MAX_OUTPUT_PORT_TYPE
+s_out[9] <= inst12[8].DB_MAX_OUTPUT_PORT_TYPE
+s_in[0] => tenbitfulladder:inst.A[0]
+s_in[1] => tenbitfulladder:inst.A[1]
+s_in[2] => tenbitfulladder:inst.A[2]
+s_in[3] => tenbitfulladder:inst.A[3]
+s_in[4] => tenbitfulladder:inst.A[4]
+s_in[5] => tenbitfulladder:inst.A[5]
+s_in[6] => tenbitfulladder:inst.A[6]
+s_in[7] => tenbitfulladder:inst.A[7]
+s_in[8] => tenbitfulladder:inst.A[8]
+s_in[9] => tenbitfulladder:inst.A[9]
+B_in[0] => inst2[0].IN1
+B_in[1] => inst2[1].IN1
+B_in[2] => inst2[2].IN1
+B_in[3] => inst2[3].IN1
+B_in[4] => inst2[4].IN1
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst
+CarryOut <= fulladder:inst10.carryout
+InputCarry => fulladder:inst.carryin
+A[0] => fulladder:inst.inputA
+A[1] => fulladder:inst2.inputA
+A[2] => fulladder:inst3.inputA
+A[3] => fulladder:inst4.inputA
+A[4] => fulladder:inst5.inputA
+A[5] => fulladder:inst6.inputA
+A[6] => fulladder:inst7.inputA
+A[7] => fulladder:inst8.inputA
+A[8] => fulladder:inst9.inputA
+A[9] => fulladder:inst10.inputA
+B[0] => fulladder:inst.inputB
+B[1] => fulladder:inst2.inputB
+B[2] => fulladder:inst3.inputB
+B[3] => fulladder:inst4.inputB
+B[4] => fulladder:inst5.inputB
+B[5] => fulladder:inst6.inputB
+B[6] => fulladder:inst7.inputB
+B[7] => fulladder:inst8.inputB
+B[8] => fulladder:inst9.inputB
+B[9] => fulladder:inst10.inputB
+s[0] <= fulladder:inst.sum
+s[1] <= fulladder:inst2.sum
+s[2] <= fulladder:inst3.sum
+s[3] <= fulladder:inst4.sum
+s[4] <= fulladder:inst5.sum
+s[5] <= fulladder:inst6.sum
+s[6] <= fulladder:inst7.sum
+s[7] <= fulladder:inst8.sum
+s[8] <= fulladder:inst9.sum
+s[9] <= fulladder:inst10.sum
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst10
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst9
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst8
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst7
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst6
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst5
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst4
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst3
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst2
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst14|tenbitfulladder:inst|fulladder:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst
+A_out[0] <= <GND>
+A_out[1] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+A_out[2] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+A_out[3] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+A_out[4] <= inst11[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst11[0].DATAIN
+A[1] => inst11[1].DATAIN
+A[2] => inst11[2].DATAIN
+A[3] => inst11[3].DATAIN
+A[4] => inst2[4].IN0
+A[4] => inst2[3].IN0
+A[4] => inst2[2].IN0
+A[4] => inst2[1].IN0
+A[4] => inst2[0].IN0
+s_out[0] <= <GND>
+s_out[1] <= inst12[0].DB_MAX_OUTPUT_PORT_TYPE
+s_out[2] <= inst12[1].DB_MAX_OUTPUT_PORT_TYPE
+s_out[3] <= inst12[2].DB_MAX_OUTPUT_PORT_TYPE
+s_out[4] <= inst12[3].DB_MAX_OUTPUT_PORT_TYPE
+s_out[5] <= inst12[4].DB_MAX_OUTPUT_PORT_TYPE
+s_out[6] <= inst12[5].DB_MAX_OUTPUT_PORT_TYPE
+s_out[7] <= inst12[6].DB_MAX_OUTPUT_PORT_TYPE
+s_out[8] <= inst12[7].DB_MAX_OUTPUT_PORT_TYPE
+s_out[9] <= inst12[8].DB_MAX_OUTPUT_PORT_TYPE
+s_in[0] => tenbitfulladder:inst.A[0]
+s_in[1] => tenbitfulladder:inst.A[1]
+s_in[2] => tenbitfulladder:inst.A[2]
+s_in[3] => tenbitfulladder:inst.A[3]
+s_in[4] => tenbitfulladder:inst.A[4]
+s_in[5] => tenbitfulladder:inst.A[5]
+s_in[6] => tenbitfulladder:inst.A[6]
+s_in[7] => tenbitfulladder:inst.A[7]
+s_in[8] => tenbitfulladder:inst.A[8]
+s_in[9] => tenbitfulladder:inst.A[9]
+B_in[0] => inst2[0].IN1
+B_in[1] => inst2[1].IN1
+B_in[2] => inst2[2].IN1
+B_in[3] => inst2[3].IN1
+B_in[4] => inst2[4].IN1
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst
+CarryOut <= fulladder:inst10.carryout
+InputCarry => fulladder:inst.carryin
+A[0] => fulladder:inst.inputA
+A[1] => fulladder:inst2.inputA
+A[2] => fulladder:inst3.inputA
+A[3] => fulladder:inst4.inputA
+A[4] => fulladder:inst5.inputA
+A[5] => fulladder:inst6.inputA
+A[6] => fulladder:inst7.inputA
+A[7] => fulladder:inst8.inputA
+A[8] => fulladder:inst9.inputA
+A[9] => fulladder:inst10.inputA
+B[0] => fulladder:inst.inputB
+B[1] => fulladder:inst2.inputB
+B[2] => fulladder:inst3.inputB
+B[3] => fulladder:inst4.inputB
+B[4] => fulladder:inst5.inputB
+B[5] => fulladder:inst6.inputB
+B[6] => fulladder:inst7.inputB
+B[7] => fulladder:inst8.inputB
+B[8] => fulladder:inst9.inputB
+B[9] => fulladder:inst10.inputB
+s[0] <= fulladder:inst.sum
+s[1] <= fulladder:inst2.sum
+s[2] <= fulladder:inst3.sum
+s[3] <= fulladder:inst4.sum
+s[4] <= fulladder:inst5.sum
+s[5] <= fulladder:inst6.sum
+s[6] <= fulladder:inst7.sum
+s[7] <= fulladder:inst8.sum
+s[8] <= fulladder:inst9.sum
+s[9] <= fulladder:inst10.sum
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst10
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst9
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst8
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst7
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst6
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst5
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst4
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst3
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst2
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registeredmultiplier|pipelinedmultiplier:inst|sum:inst|tenbitfulladder:inst|fulladder:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+carryin => inst3.IN0
+carryin => inst1.IN0
+inputA => inst.IN0
+inputA => inst4.IN0
+inputB => inst.IN1
+inputB => inst4.IN1
+carryout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

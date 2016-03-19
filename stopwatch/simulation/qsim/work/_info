@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 d\\icnas2.cc.ic.ac.uk\dm2515\FPGA_NEW\stopwatch\simulation\qsim
+vstopwatch
+Z1 !s100 Ez1WZof?<bGVXAMkLA^ea2
+Z2 I@10Sf?2CVO7g0D0UGbz1d0
+Z3 VV8X]zU:TaHo95]K72=D@02
+Z4 d\\icnas2.cc.ic.ac.uk\dm2515\FPGA_NEW\stopwatch\simulation\qsim
+Z5 w1456762308
+Z6 8stopwatch.vo
+Z7 Fstopwatch.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|stopwatch.vo|
+Z10 o-work work -O0
+Z11 !s108 1456762310.542000
+Z12 !s107 stopwatch.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vstopwatch_vlg_check_tst
+Z13 !s100 oU1dk_DYQS^@9[Rb;[=<C1
+Z14 I0zQ1``NLJPcUgO0<hJSNK3
+Z15 VGb]BCaMU=CAjUg]ooaCZe1
+R4
+Z16 w1456762307
+Z17 8stopwatch.vt
+Z18 Fstopwatch.vt
+L0 57
+R8
+r1
+31
+Z19 !s108 1456762310.815000
+Z20 !s107 stopwatch.vt|
+Z21 !s90 -work|work|stopwatch.vt|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vstopwatch_vlg_sample_tst
+Z22 !s100 =NG:mIPFIjVBMD`Vb;TXe0
+Z23 IM[_YUX>Y]JQ^[[?BAmXeF0
+Z24 V>M4J6loIb?mob;^A^fXAb3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vstopwatch_vlg_vec_tst
+Z25 !s100 R<[0om0K`;beY1jY1Tzcm3
+Z26 IJS;AMX2^EAZhh5_kNW^OC1
+Z27 Va:lA9WSFa]KN^M_9^30h43
+R4
+R16
+R17
+R18
+Z28 L0 152
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vstopwatchtimes
+Z29 I8JUZLNO3Y?DgenWUjKam[2
+Z30 VVf7TO^[bkC`elW2TM18Ck2
+Z31 d\\icnas2.cc.ic.ac.uk\dm2515\FPGA_NEW\documents-export-2016-03-11\stopwatch_new 2\stopwatch_new\stopwatch\simulation\qsim
+Z32 w1457720033
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z33 !s100 n`4^0K@QBGA44m`=24K9@2
+!s85 0
+Z34 !s108 1457720035.278000
+R12
+!s101 -O0
+vstopwatchtimes_vlg_check_tst
+!i10b 1
+Z35 !s100 ?JZ`:2WUSd^DFFS3Gm@`a1
+Z36 I31o4kUjeWo:_2QRmIoKMg3
+Z37 Vo1S`[Az:5d:>cTz>]TbT[3
+R31
+Z38 w1457720031
+R17
+R18
+L0 57
+R8
+r1
+!s85 0
+31
+Z39 !s108 1457720035.588000
+Z40 !s107 stopwatch.vt|
+R21
+!s101 -O0
+R10
+vstopwatchtimes_vlg_sample_tst
+!i10b 1
+Z41 !s100 >hCfFM5o5XUSM[43HJ;DG1
+Z42 IZ`mW:<BEGz^B`n78k8kcU2
+Z43 VSW`o9efMokSJSNMS7goER1
+R31
+R38
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R39
+R40
+R21
+!s101 -O0
+R10
+vstopwatchtimes_vlg_vec_tst
+!i10b 1
+!s100 FHOnX@XFh4o^L;QbI7oL_2
+IfX8j[kD@02X^<Oi_3gZc[1
+Z44 VC;cggDLJF2g7>BUZNF7=72
+R31
+R38
+R17
+R18
+Z45 L0 688
+R8
+r1
+!s85 0
+31
+R39
+R40
+R21
+!s101 -O0
+R10

@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 d\\icnas2.cc.ic.ac.uk\dm2515\FPGA_NEW\multiplier\simulation\qsim
+vmultiplier
+Z1 I:in:Q7GL_[=mgeAd0785l0
+Z2 VMVXYoOP:M3WND9n;[OP<83
+Z3 d\\icnas2.cc.ic.ac.uk\dm2515\FPGA_NEW\multiplier\simulation\qsim
+Z4 w1456401304
+Z5 8multiplier.vo
+Z6 Fmultiplier.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|multiplier.vo|
+Z9 o-work work -O0
+Z10 !s100 X_`zTNY3m_Ae^27mR1Lih3
+Z11 !s108 1456401305.436000
+Z12 !s107 multiplier.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplier_vlg_check_tst
+Z13 I>9iAYFA<C6ncLn2IJ_4_Q3
+Z14 V6@5`eoMQE8n9da85ck4LE0
+R3
+Z15 w1456401302
+Z16 8multiplier.vt
+Z17 Fmultiplier.vt
+L0 59
+R7
+r1
+31
+Z18 !s108 1456401305.704000
+Z19 !s107 multiplier.vt|
+Z20 !s90 -work|work|multiplier.vt|
+R9
+Z21 !s100 ]]O5SS?iCRe`4XcQE@oP=2
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplier_vlg_sample_tst
+Z22 !s100 6lSJ_V;?lMNhVVeel8lP00
+Z23 IWGMY<<<`^_XbFU[mc;5lH0
+Z24 VX>FZ2JQFTnASOTocnfk?k0
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+31
+R18
+R19
+R20
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplier_vlg_vec_tst
+Z25 IXXVhJFofJ[z??c]S4AIOW3
+Z26 V2;[nQAL>5:S>7m<1n;=d31
+R3
+R15
+R16
+R17
+Z27 L0 315
+R7
+r1
+31
+R18
+R19
+R20
+R9
+Z28 !s100 YfkVF4S^VdaVO]zlfD7Ig0
+!i10b 1
+!s85 0
+!s101 -O0
+vregisteredmultiplier
+Z29 IZ_bnXLl@:EX7hRPj2CFeG1
+Z30 V;Oh4f6K`lC1o<R8j>^XjD2
+R3
+Z31 w1456493124
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+Z32 !s100 m1f^76RcJ]:>kJ5enK^<g1
+!s85 0
+Z33 !s108 1456493125.020000
+R12
+!s101 -O0
+vregisteredmultiplier_vlg_check_tst
+!i10b 1
+Z34 !s100 :f@IaZ<b2E4?<?W0POkh50
+Z35 IWzG60Se]Kl<[Zb02dkOUF3
+Z36 VzWCQ4i]Anc^MMjQ@4P7lL3
+R3
+Z37 w1456493122
+R16
+R17
+L0 61
+R7
+r1
+!s85 0
+31
+Z38 !s108 1456493125.265000
+Z39 !s107 multiplier.vt|
+R20
+!s101 -O0
+R9
+vregisteredmultiplier_vlg_sample_tst
+!i10b 1
+Z40 !s100 =5BK^GDRAMoD;mnT?S]z@3
+Z41 IL0fFN5Sa7>zM51fQSZSXA3
+Z42 VC<FXDBFHYNS4DP7ZFW^jh3
+R3
+R37
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R38
+R39
+R20
+!s101 -O0
+R9
+vregisteredmultiplier_vlg_vec_tst
+!i10b 1
+Z43 !s100 H;LW7e=DfCZAC22jdU^^S0
+Z44 IB0LMXSm4hCV>alAWQBS?91
+Z45 V7g[MMdlalE>0lf7HB=C^71
+R3
+R37
+R16
+R17
+Z46 L0 317
+R7
+r1
+!s85 0
+31
+R38
+R39
+R20
+!s101 -O0
+R9

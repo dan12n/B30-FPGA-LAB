@@ -1,0 +1,39 @@
+# do stopwatch.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stopwatchtimes
+# 
+# Top level modules:
+# 	stopwatchtimes
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stopwatchtimes_vlg_sample_tst
+# -- Compiling module stopwatchtimes_vlg_check_tst
+# -- Compiling module stopwatchtimes_vlg_vec_tst
+# 
+# Top level modules:
+# 	stopwatchtimes_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.stopwatchtimes_vlg_vec_tst 
+# Loading work.stopwatchtimes_vlg_vec_tst
+# Loading work.stopwatchtimes
+# Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading work.stopwatchtimes_vlg_sample_tst
+# Loading work.stopwatchtimes_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# ** Error: (sdfcomp-7) Failed to open SDF file "stopwatch_v.sdo" in read mode.
+# 
+# 
+# No such file or directory. (errno = ENOENT)
+# 
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Error: stopwatch_v.sdo_typ.csd: syntax error, unexpected $end, expecting '('
+# ** Error: (vsim-SDF-3445) Failed to parse SDF file "stopwatch_v.sdo".
+#    Time: 0 ps  Iteration: 0  Instance: /stopwatchtimes_vlg_vec_tst File: stopwatch.vt
+# Error loading design

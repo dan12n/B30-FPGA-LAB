@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : -1.876
+TNS   : -23.976
+
+Type  : Slow 1200mV 85C Model Setup 'clock_in'
+Slack : -1.503
+TNS   : -18.347
+
+Type  : Slow 1200mV 85C Model Setup 'split'
+Slack : -1.497
+TNS   : -33.011
+
+Type  : Slow 1200mV 85C Model Setup 'button2'
+Slack : -0.122
+TNS   : -0.122
+
+Type  : Slow 1200mV 85C Model Hold 'clock_in'
+Slack : -1.147
+TNS   : -11.668
+
+Type  : Slow 1200mV 85C Model Hold 'button2'
+Slack : -0.019
+TNS   : -0.019
+
+Type  : Slow 1200mV 85C Model Hold 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'split'
+Slack : 0.685
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock_in'
+Slack : -3.542
+TNS   : -67.289
+
+Type  : Slow 1200mV 85C Model Removal 'clock_in'
+Slack : 0.034
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_in'
+Slack : -3.000
+TNS   : -22.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'button2'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'split'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -16.000
+
+Type  : Slow 1200mV 0C Model Setup 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : -1.617
+TNS   : -20.524
+
+Type  : Slow 1200mV 0C Model Setup 'clock_in'
+Slack : -1.200
+TNS   : -14.046
+
+Type  : Slow 1200mV 0C Model Setup 'split'
+Slack : -1.160
+TNS   : -24.370
+
+Type  : Slow 1200mV 0C Model Setup 'button2'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Slow 1200mV 0C Model Hold 'clock_in'
+Slack : -1.080
+TNS   : -11.814
+
+Type  : Slow 1200mV 0C Model Hold 'button2'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'split'
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock_in'
+Slack : -3.071
+TNS   : -58.340
+
+Type  : Slow 1200mV 0C Model Removal 'clock_in'
+Slack : -0.057
+TNS   : -1.083
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_in'
+Slack : -3.000
+TNS   : -22.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'button2'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'split'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -16.000
+
+Type  : Fast 1200mV 0C Model Setup 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : -0.696
+TNS   : -8.948
+
+Type  : Fast 1200mV 0C Model Setup 'clock_in'
+Slack : -0.420
+TNS   : -2.886
+
+Type  : Fast 1200mV 0C Model Setup 'split'
+Slack : -0.046
+TNS   : -0.046
+
+Type  : Fast 1200mV 0C Model Setup 'button2'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_in'
+Slack : -0.737
+TNS   : -8.158
+
+Type  : Fast 1200mV 0C Model Hold 'button2'
+Slack : -0.036
+TNS   : -0.036
+
+Type  : Fast 1200mV 0C Model Hold 'split'
+Slack : -0.003
+TNS   : -0.006
+
+Type  : Fast 1200mV 0C Model Hold 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clock_in'
+Slack : -1.587
+TNS   : -30.143
+
+Type  : Fast 1200mV 0C Model Removal 'clock_in'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_in'
+Slack : -3.000
+TNS   : -23.064
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'button2'
+Slack : -3.000
+TNS   : -4.205
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'split'
+Slack : -3.000
+TNS   : -3.491
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'newcounter:inst|eighteenbit:inst|lpm_counter:LPM_COUNTER_component|cntr_p7i:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -16.000
+
+------------------------------------------------------------
