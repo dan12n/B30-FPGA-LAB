@@ -22,7 +22,7 @@ In order to implement this with combinational logic, 2n bit full adders were req
 ### Combinational Multiplier
 A symbol of the following was created in order to implement shifting and adding, illustrated in the above diagram.
 
-![blockshiftandadd](
+
 ![newblock](https://cloud.githubusercontent.com/assets/17357371/13904779/938d345e-eea3-11e5-90a8-43a42e458393.png)
 
 This was then looped five times for the five bits:
