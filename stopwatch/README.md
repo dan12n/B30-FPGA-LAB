@@ -55,7 +55,7 @@ assign display[6] = ~((~decimal[2] & decimal[1]) | (decimal[1] & ~decimal[0]) | 
 We wanted to use a push-button as both the start and stop of the stop-watch. This required a more complicated latch system than for initiating the stop watch alone.
 
 A J-K flip flop was used in the following configuration for this purpose:
-![startstop](https://cloud.githubusercontent.com/assets/17357371/13904017/ec9cf6ac-ee89-11e5-9b17-015acb9110b2.png)
+![startstop](![new_startstop](https://cloud.githubusercontent.com/assets/17357371/13904803/62b658dc-eea4-11e5-8b9b-c3008d58819d.png)
 
 ####Reset
 The counters had asynchronous clear as a megafunction, which we implemented in our design.
