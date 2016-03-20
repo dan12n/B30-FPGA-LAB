@@ -29,7 +29,7 @@ Two main methods were tried, and the simplest of the two was chosen. The custom 
 ###Generating the BCD output
 The clock was always enabled in order to allow the counter to count without any glitches. Once the counter reaches 10, it is reset and the subsequent counter is enabled. This will be 10x slower than the previous counter because it is enabled after the previous counter reaches 10. This generates the required BCD output.
 
-![bcdgenerator](https://cloud.githubusercontent.com/assets/17357371/13903991/b1cb7e8c-ee88-11e5-8fac-67d690c2946e.png)
+![newcounter](https://cloud.githubusercontent.com/assets/17357371/13904854/1e587c68-eea6-11e5-9006-c138f62cc9c6.PNG)
 
 ###BCD to 7-Segment Display
 It was decided that the PAL system for this would be too time consuming to implement. Thus a Karnaugh map was made for each segment of the display, giving the following code:
