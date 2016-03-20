@@ -65,4 +65,4 @@ The counters had asynchronous clear as a megafunction, which we implemented in o
 ####Split
 This was simple to implement, as the LCD diplay panel would latch when the input from the push button was 0.
 
-![split](![newsplit](https://cloud.githubusercontent.com/assets/17357371/13904825/de0aef66-eea4-11e5-922b-9183bfe037ae.png)
+![newsplit](https://cloud.githubusercontent.com/assets/17357371/13904825/de0aef66-eea4-11e5-922b-9183bfe037ae.png)
